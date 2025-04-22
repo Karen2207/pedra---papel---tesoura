@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan-Ken-Pon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Jogo Jan-Ken-Pon</h2>
+        <button onclick="game(0)">Papel</button>
+        <button onclick="game(1)">Pedra</button>
+        <button onclick="game(2)">Tesoura</button>
+        <br><br>
+        <div class="hands" id="hands">✋ vs ✊</div>
+        <input id="tres" readonly>
+        <br><br>
+        <table style="margin: auto;">
+            <tr>
+                <td>Você:</td>
+                <td><input id="tpla" value="0" readonly></td>
+            </tr>
+            <tr>
+                <td>Eu:</td>
+                <td><input id="tcom" value="0" readonly></td>
+            </tr>
+        </table>
+    </div>
+<audio id="bgm" src="game-music-loop-7-145285.mp3" autoplay loop>
+</audio>
+<button onclick="document.getElementById('bgm').play()">🔊</button>
+<button onclick="document.getElementById('bgm').pause()">🔇</button>
+</body>
+</html>
